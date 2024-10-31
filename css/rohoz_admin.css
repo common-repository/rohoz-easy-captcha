@@ -1,0 +1,310 @@
+.rohoz_header{
+font-size: 30px !important;
+color: #555;
+line-height: 3.5 !important;
+text-align: center;
+background: url(../img/arm.png) no-repeat left center;
+padding-left: 77px !important;
+margin: 0 auto !important;
+width: 265px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, .14);
+}
+.rohoz_help{
+border: 1px solid #ddd;
+background-color: #fff;
+box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
+max-width: 700px;
+margin: 0 auto;
+padding: 7px 0 7px 110px;
+position: relative;
+color: #555;
+cursor: default;
+text-align: center;
+margin-top: 28px;
+}
+.rohoz_help>span{
+border: 1px solid #0bd;
+background: #0cf url(../img/guide.png) no-repeat center;
+position: absolute;
+top: -1px;
+left: -1px;
+width: 108px;
+bottom: -1px;
+}
+.rohoz_help>a{
+border: 1px solid #ddd;
+background-color: #f1f1f1;
+width: 168px;
+height: 42px;
+display: inline-block;
+color: #555;
+text-decoration: none;
+margin: 5px 7px;
+text-align: center;
+font-size: 16px;
+line-height: 2.4;
+}
+.rohoz_help>a:hover{
+background-color: #eee;
+}
+@keyframes rohoz-shp
+{
+	0% {
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+	}
+	100% {
+		box-shadow: 0 0 0 7px rgba(0, 0, 0, 0);
+	}
+}
+@keyframes heartbeat
+{
+	0%
+	{
+		transform: scale( .75 );
+	}
+	20%
+	{
+		transform: scale( 1 );
+	}
+	40%
+	{
+		transform: scale( .75 );
+	}
+	60%
+	{
+		transform: scale( 1 );
+	}
+	80%
+	{
+		transform: scale( .75 );
+	}
+	100%
+	{
+		transform: scale( .75 );
+	}
+}
+.rohoz_help>a:last-child{
+border: 1px solid #d8ad00;
+background-color: #fc0;
+width: 98px;
+height: 42px;
+display: inline-block;
+color: #5a4800;
+text-decoration: none;
+margin: 5px 7px;
+text-align: center;
+font-size: 16px;
+line-height: 2.4;
+position: absolute;
+right: 0;
+top: -60px;
+animation: rohoz-shp 1s 7;
+padding-left: 40px;
+}
+.rohoz_help>a:last-child:hover{
+background-color: #fb0;
+}
+.rohoz_help>a:last-child:after{
+font-family: dashicons;
+content: "\f487";
+font-size: 35px;
+position: absolute;
+animation: heartbeat 2.1s infinite;
+color: #f00;
+text-shadow: 0px 1px 0px #fff, 0px -1px 0px #fff, 1px 0px 0px #fff, -1px 0px 0px #fff;
+line-height: 1.2;
+left: 7px;
+}
+
+.rohoz_warning{
+border: 1px solid #ddd;
+background-color: #fff;
+box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
+max-width: 700px;
+height: 94px;
+margin: 21px auto;
+padding: 7px 0 7px 110px;
+position: relative;
+color: #555;
+cursor: default;
+}
+.rohoz_warning>span{
+border: 1px solid #db0;
+background: #fc0 url(../img/key-warning.png) no-repeat center;
+position: absolute;
+top: -1px;
+left: -1px;
+width: 108px;
+height: 108px;
+}
+.rohoz_warning>h2{
+margin: 0;
+padding-left: 14px;
+color: #555;
+}
+.rohoz_input{
+max-width: 400px;
+margin: 7px auto;
+position: relative;
+padding-top: 14px;
+}
+.rohoz_input>input{
+width: 100%;
+padding: 7px 7px 0px 28px;
+}
+.rohoz_input>textarea{
+width: 100%;
+padding: 7px 7px 0px 28px;
+}
+.rohoz_input>select{
+width: 100%;
+padding: 7px 7px 0px 28px;
+}
+.rohoz_button{
+color:#fff !important;
+border-color:#a10000 !important;
+background:#f00 !important;
+margin-bottom: 7px !important;
+position: relative;
+padding-left: 35px !important;
+}
+.rohoz_button>span{
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+display: block;
+height: auto;
+width: 28px;
+line-height: 1.4;
+background-color:#d50000;
+}
+
+.rohoz_input>label{
+position: absolute;
+left: 14px;
+top: 4px;
+font-size: 14px;
+z-index: 2;
+padding: 0 7px;
+}
+.rohoz_input>label>span{
+position: absolute;
+left: -7px;
+top: 21px;
+color: #ccc;
+}
+.rohoz_input>label:before{
+content: "";
+position: absolute;
+left: 0;
+top: 9px;
+right: 0;
+height: 3px;
+background-color: #f1f1f1;
+z-index: -1;
+}
+.rohoz_hide{
+display: none !important;
+}
+.rohoz_Listview{
+border: solid 1px rgb(221, 221, 221);
+background-color: rgb(255, 255, 255);
+box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.12);
+width: 100%;
+max-width: 777px;
+max-height: 777px;
+margin: 21px auto;
+overflow: auto;
+}
+.rohoz_Listview>div{
+border: solid 1px #e7e7e7;
+background-color: #fff;
+width: calc(100% - 16px);
+height: 63px;
+margin: 7px;
+}
+.rohoz_Listview>div:nth-child(2n+1){
+background-color: #f8f8f8;
+}
+.rohoz_Listview>div>div{
+height: 38px;
+}
+.rohoz_Listview>div>div>p{
+display: inline-block;
+padding: 7px;
+margin: 0;
+}
+.rohoz_Listview>div>div>button{
+float: right;
+margin: 7px 7px 0 7px !important;
+}
+.rohoz_Listview>div>pre{
+padding: 0 7px 7px 7px;
+overflow-x: hidden;
+text-overflow: ellipsis;
+margin: 0;
+}
+
+.rohoz_fieldset{
+max-width: 400px;
+margin: 21px auto;
+}
+.rohoz_checkbox{
+max-width: 400px;
+margin: 14px auto;
+}
+.rohoz_checkbox>input{
+display: none;
+}
+.rohoz_checkbox>label:nth-child(2){
+border: 1px solid #ccc;
+background-color: #fff;
+width: 56px;
+height: 16px;
+border-radius: 14px;
+box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+display: inline-block;
+position: relative;
+}
+.rohoz_checkbox>label:nth-child(2)>label{
+border: 1px solid #bbb;
+background-color: #ccc;
+width: 21px;
+height: 21px;
+border-radius: 14px;
+box-shadow: 0 0 1px 2px rgba(0,0,0,.07);
+position: absolute;
+top: -4px;
+left: -1px;
+-moz-transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease 0.2s;
+}
+.rohoz_checkbox>input:checked~label:nth-child(2)>label{
+border: 1px solid #0bd;
+background-color: #0cf;
+top: -4px;
+left: 35px;
+-moz-transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease 0.2s;
+}
+.rohoz_checkbox>label:nth-child(3){
+padding-left: 7px;
+}
+.rohoz_checkbox>input:disabled~label:nth-child(2){
+border: 1px solid #ddd;
+background-color: #f4f4f4;
+}
+.rohoz_checkbox>input:disabled~label:nth-child(2)>label{
+border: 1px solid #ddd;
+background-color: #ddd;
+box-shadow: none;
+}
+.rohoz_checkbox>input:disabled~label:nth-child(3){
+color:#aaa;
+}
+#prevented-tab,#dashboard-tab{
+cursor: pointer;
+}
